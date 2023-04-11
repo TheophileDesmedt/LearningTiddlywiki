@@ -154,6 +154,8 @@ Error message and password prompt
 
 <li>$:/config/PageControlButtons/Visibility/$:/plugins/cdr/external-js/ui/download-full-wiki</li>
 
+<li>$:/config/RelinkOnRename</li>
+
 <li>$:/config/SaveWikiButton/Template</li>
 
 <li>$:/config/ViewToolbarButtons/Visibility/$:/plugins/breakzplatform/github-comments/viewtoolbar/github-comments-open</li>
@@ -228,7 +230,7 @@ Error message and password prompt
 
 <li>Publishing your wiki to Github Page</li>
 
-<li>Table of content</li>
+<li>TableOfContent</li>
 
 </ul>
 </p>
@@ -250,10 +252,11 @@ Error message and password prompt
 {"title":"$:/config/OfficialPluginLibrary","tags":"$:/tags/PluginLibrary","url":"https://tiddlywiki.com/prerelease/library/v5.2.8/index.html","caption":"{{$:/language/OfficialPluginLibrary}} (Prerelease)","text":"The prerelease version of the official ~TiddlyWiki plugin library at tiddlywiki.com. Plugins, themes and language packs are maintained by the core team.\n"},
 {"created":"20230411131532112","text":"show","title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home","modified":"20230411131532112"},
 {"created":"20230411141850858","text":"show","title":"$:/config/PageControlButtons/Visibility/$:/plugins/cdr/external-js/ui/download-full-wiki","modified":"20230411141850858"},
+{"created":"20230411142244480","text":"yes","title":"$:/config/RelinkOnRename","modified":"20230411142244480"},
 {"title":"$:/config/SaveWikiButton/Template","text":"$:/core/save/offline-external-js"},
 {"created":"20230411140935075","text":"hide","title":"$:/config/ViewToolbarButtons/Visibility/$:/plugins/breakzplatform/github-comments/viewtoolbar/github-comments-open","modified":"20230411140935075"},
 {"created":"20230411141758083","text":"\\whitespace trim\n\\rules except wikilink\n\nTo download the standard single-file version of your wiki:\n\n\u003C$wikify name=\"site-title\" text={{$:/config/SaveWikiButton/Filename}}>\n\u003C$let publishFilter=\"\"\"-[[$:/config/SaveWikiButton/Template]] -[[$:/plugins/tiddlywiki/filesystem]] -[[$:/plugins/tiddlywiki/tiddlyweb]]\"\"\">\n\u003C$button tooltip=\"Download fully standalone wiki\" aria-label=\"download full wiki\" class=\"tc-btn-big-green\">\n\u003C$action-sendmessage $message=\"tm-download-file\" $param=\"$:/core/save/all\" publishFilter=\u003C\u003CpublishFilter>> filename=\u003C\u003Csite-title>>/>\n{{$:/core/images/download-button}}\n\u003Cspan class=\"tc-tiny-gap-left\">\nDownload full wiki\n\u003C/span>\n\u003C/$button>\n\u003C/$let>\n\u003C/$wikify>","title":"$:/core/ui/DownloadFullWiki","modified":"20230411141811459","tags":""},
-{"created":"20230411131747520","title":"$:/DefaultTiddlers","text":"[[Table of content]]","modified":"20230411131748560"},
+{"created":"20230411131747520","title":"$:/DefaultTiddlers","text":"TableOfContent","modified":"20230411142245654"},
 {"created":"20230411142155129","title":"$:/GitHub/Filename","text":"index.html","modified":"20230411142155129"},
 {"created":"20230411142150954","title":"$:/GitHub/Path","text":"/","modified":"20230411142150954"},
 {"created":"20230411142146655","title":"$:/GitHub/Repo","text":"TheophileDesmedt/LearningTiddlywiki","modified":"20230411142146655"},
@@ -284,10 +287,10 @@ Error message and password prompt
 {"created":"20230411133138471","title":"$:/state/tab/sidebar--595412856","text":"$:/core/ui/SideBar/Open","modified":"20230411140904171"},
 {"created":"20230411131529579","title":"$:/state/tabs/controlpanel/toolbars-1345989671","text":"$:/core/ui/ControlPanel/Toolbars/PageControls","modified":"20230411141745561"},
 {"title":"$:/status/RequireReloadDueToPluginChange","text":"no"},
-{"title":"$:/StoryList","text":"","list":"[[Table of content]]"},
+{"title":"$:/StoryList","created":"20230411142230618","text":"","list":"TableOfContent","modified":"20230411142230618"},
 {"created":"20230411131539452","title":"$:/themes/tiddlywiki/vanilla/options/sidebarlayout","text":"fluid-fixed","modified":"20230411131539452"},
 {"created":"20230411131735142","text":"","title":"Publishing your wiki to Github Page","modified":"20230411140106173"},
-{"created":"20230411131610107","text":"* [[Publishing your wiki to Github Page]]","tags":"","title":"Table of content","modified":"20230411131728722"}
+{"created":"20230411131610107","text":"* [[Publishing your wiki to Github Page]]","tags":"","title":"TableOfContent","modified":"20230411142245652"}
 ]</script><div id="storeArea" style="display:none;"></div>
 <!--~~ Raw markup for the bottom of the body section ~~-->
 
