@@ -152,6 +152,8 @@ Error message and password prompt
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home</li>
 
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/save-wiki</li>
+
 <li>$:/config/PageControlButtons/Visibility/$:/plugins/cdr/external-js/ui/download-full-wiki</li>
 
 <li>$:/config/RelinkOnRename</li>
@@ -159,6 +161,8 @@ Error message and password prompt
 <li>$:/config/SaveWikiButton/Template</li>
 
 <li>$:/config/ViewToolbarButtons/Visibility/$:/plugins/breakzplatform/github-comments/viewtoolbar/github-comments-open</li>
+
+<li>$:/core/ui/Buttons/save-wiki</li>
 
 <li>$:/core/ui/DownloadFullWiki</li>
 
@@ -232,7 +236,7 @@ Error message and password prompt
 
 <li>Publishing your wiki to Github Page</li>
 
-<li>SaveWiki</li>
+<li>Save</li>
 
 <li>TableOfContent</li>
 
@@ -255,23 +259,25 @@ Error message and password prompt
 {"created":"20230411131431047","text":"yes","title":"$:/config/ExternalJS/EnableExternalPlugins","modified":"20230411131431047"},
 {"title":"$:/config/OfficialPluginLibrary","tags":"$:/tags/PluginLibrary","url":"https://tiddlywiki.com/prerelease/library/v5.2.8/index.html","caption":"{{$:/language/OfficialPluginLibrary}} (Prerelease)","text":"The prerelease version of the official ~TiddlyWiki plugin library at tiddlywiki.com. Plugins, themes and language packs are maintained by the core team.\n"},
 {"created":"20230411131532112","text":"show","title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home","modified":"20230411131532112"},
+{"created":"20230411144119522","text":"hide","title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/save-wiki","modified":"20230411144119522"},
 {"created":"20230411141850858","text":"show","title":"$:/config/PageControlButtons/Visibility/$:/plugins/cdr/external-js/ui/download-full-wiki","modified":"20230411141850858"},
 {"created":"20230411142244480","text":"yes","title":"$:/config/RelinkOnRename","modified":"20230411142244480"},
 {"title":"$:/config/SaveWikiButton/Template","text":"$:/core/save/offline-external-js"},
 {"created":"20230411140935075","text":"hide","title":"$:/config/ViewToolbarButtons/Visibility/$:/plugins/breakzplatform/github-comments/viewtoolbar/github-comments-open","modified":"20230411140935075"},
+{"created":"20230411143923061","text":"\\whitespace trim\n\u003C$button tooltip={{$:/language/Buttons/SaveWiki/Hint}} aria-label={{$:/language/Buttons/SaveWiki/Caption}} class=\u003C\u003Ctv-config-toolbar-class>>>\n\u003C$wikify name=\"site-title\" text={{$:/config/SaveWikiButton/Filename}}>\n\u003C$action-sendmessage $message=\"tm-save-wiki\" $param={{$:/config/SaveWikiButton/Template}} filename=\u003C\u003Csite-title>>/>\n\u003C/$wikify>\n\u003Cspan class=\"tc-dirty-indicator\">\n\u003C$list filter=\"[\u003Ctv-config-toolbar-icons>match[yes]]\">\n{{$:/core/images/save-button-dynamic}}\n\u003C/$list>\n\u003C$list filter=\"[\u003Ctv-config-toolbar-text>match[yes]]\">\n\u003Cspan class=\"tc-btn-text\">\n\u003C$text text={{$:/language/Buttons/SaveWiki/Caption}}/>\n\u003C/span>\n\u003C/$list>\n\u003C/span>\n\u003C/$button>","title":"$:/core/ui/Buttons/save-wiki","tags":"$:/tags/PageControls","caption":"{{$:/core/images/save-button-dynamic}} {{$:/language/Buttons/SaveWiki/Caption}}","description":"{{$:/language/Buttons/SaveWiki/Hint}}","modified":"20230411143923061"},
 {"created":"20230411141758083","text":"\\whitespace trim\n\\rules except wikilink\n\nTo download the standard single-file version of your wiki:\n\n\u003C$wikify name=\"site-title\" text={{$:/config/SaveWikiButton/Filename}}>\n\u003C$let publishFilter=\"\"\"-[[$:/config/SaveWikiButton/Template]] -[[$:/plugins/tiddlywiki/filesystem]] -[[$:/plugins/tiddlywiki/tiddlyweb]]\"\"\">\n\u003C$button tooltip=\"Download fully standalone wiki\" aria-label=\"download full wiki\" class=\"tc-btn-big-green\">\n\u003C$action-sendmessage $message=\"tm-download-file\" $param=\"$:/core/save/all\" publishFilter=\u003C\u003CpublishFilter>> filename=\u003C\u003Csite-title>>/>\n{{$:/core/images/download-button}}\n\u003Cspan class=\"tc-tiny-gap-left\">\nDownload full wiki\n\u003C/span>\n\u003C/$button>\n\u003C/$let>\n\u003C/$wikify>","title":"$:/core/ui/DownloadFullWiki","modified":"20230411141811459","tags":""},
 {"created":"20230411131747520","title":"$:/DefaultTiddlers","text":"TableOfContent","modified":"20230411142245654"},
 {"created":"20230411142155129","title":"$:/GitHub/Filename","text":"index.html","modified":"20230411142155129"},
 {"created":"20230411142150954","title":"$:/GitHub/Path","text":"/","modified":"20230411142150954"},
 {"created":"20230411142146655","title":"$:/GitHub/Repo","text":"TheophileDesmedt/LearningTiddlywiki","modified":"20230411142146655"},
-{"created":"20230411142144485","title":"$:/GitHub/Username","text":"TheophileDesmedt","modified":"20230411143346634"},
+{"created":"20230411142144485","title":"$:/GitHub/Username","text":"TheophileDesmedt","modified":"20230411144127859"},
 {"title":"$:/Import","text":"The following tiddlers were imported:\n\n# [[$:/plugins/breakzplatform/github-comments]]","status":"complete"},
 {"title":"$:/isEncrypted","text":"no"},
 {"created":"20230411130226937","title":"$:/SiteSubtitle","text":"Get the most out of TiddlyWiki.","modified":"20230411142113306"},
 {"created":"20230411130219105","title":"$:/SiteTitle","text":"Learning Tiddlywiki","modified":"20230411130221131"},
 {"created":"20230411131816759","title":"$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddly-gittly.github.io/TiddlyWiki-CPL/library/index.html/$:/temp/RemoteAssetInfo/https://tiddly-gittly.github.io/TiddlyWiki-CPL/library/index.html/$:/plugins/flibbles/relink","text":"yes","modified":"20230411131816759"},
 {"created":"20230411131805014","title":"$:/state/addplugins/tab-1342078386","text":"$:/config/TiddlyWiki-CPL/GitHub","modified":"20230411132308837"},
-{"created":"20230411134943329","title":"$:/state/advancedsearch/currentTab","text":"$:/core/ui/AdvancedSearch/System","modified":"20230411142517754"},
+{"created":"20230411134943329","title":"$:/state/advancedsearch/currentTab","text":"$:/core/ui/AdvancedSearch/Shadows","modified":"20230411143950893"},
 {"created":"20230411140319557","title":"$:/state/breakzplatform/github-comments","text":"","modified":"20230411141244540"},
 {"created":"20230411140218162","title":"$:/state/oeyoews/github-giscus-comments","text":"$:/temp/focussedTiddler","modified":"20230411140218162"},
 {"created":"20230411140141373","title":"$:/state/peek-stylesheets/mode/-1888809289","text":"restored","modified":"20230411140143353"},
@@ -279,23 +285,23 @@ Error message and password prompt
 {"created":"20230411141821136","title":"$:/state/plugin-info--700587726-$:/plugins/cdr/external-js","text":"yes","modified":"20230411141821136"},
 {"created":"20230411141822584","title":"$:/state/plugin-info--700587726-$:/plugins/cdr/external-js---1338429718","text":"contents","modified":"20230411141822584"},
 {"created":"20230411131413067","title":"$:/state/plugin-info-1108689160-$:/plugins/cdr/external-js---960882608","text":"usage","modified":"20230411131413067"},
-{"created":"20230411134943329","title":"$:/state/tab--1498284803","text":"$:/core/ui/AdvancedSearch/System","modified":"20230411142517754"},
+{"created":"20230411134943329","title":"$:/state/tab--1498284803","text":"$:/core/ui/AdvancedSearch/Shadows","modified":"20230411143950894"},
 {"created":"20230411131527668","title":"$:/state/tab--1963855381","text":"$:/core/ui/ControlPanel/Toolbars","modified":"20230411140931757"},
 {"created":"20230411140112765","title":"$:/state/tab--2112689675","text":"$:/core/ui/ControlPanel/Basics","modified":"20230411142110450"},
 {"created":"20230411132207916","title":"$:/state/tab--639260661","text":"$:/core/ui/ControlPanel/Plugins/Add/Plugins","modified":"20230411132314203"},
 {"created":"20230411140119076","title":"$:/state/tab--959111941","text":"$:/core/ui/ControlPanel/Cascades","modified":"20230411140154401"},
-{"created":"20230411131320044","title":"$:/state/tab-1749438307","text":"$:/core/ui/ControlPanel/Saving","modified":"20230411142123624"},
+{"created":"20230411131320044","title":"$:/state/tab-1749438307","text":"$:/core/ui/ControlPanel/Appearance","modified":"20230411144114853"},
 {"created":"20230411142124693","title":"$:/state/tab-2065006209","text":"$:/core/ui/ControlPanel/Saving/GitHub","modified":"20230411142124693"},
 {"created":"20230411140157507","title":"$:/state/tab-99014043","text":"$:/core/ui/ControlPanel/ViewTemplateBody","modified":"20230411140157507"},
-{"created":"20230411140202727","title":"$:/state/tab/moresidebar-1850697562","text":"$:/core/ui/MoreSideBar/Tags","modified":"20230411140211286"},
-{"created":"20230411133138471","title":"$:/state/tab/sidebar--595412856","text":"$:/core/ui/SideBar/Recent","modified":"20230411143145401"},
+{"created":"20230411140202727","title":"$:/state/tab/moresidebar-1850697562","text":"$:/core/ui/MoreSideBar/System","modified":"20230411144026589"},
+{"created":"20230411133138471","title":"$:/state/tab/sidebar--595412856","text":"Save","modified":"20230411144110590"},
 {"created":"20230411131529579","title":"$:/state/tabs/controlpanel/toolbars-1345989671","text":"$:/core/ui/ControlPanel/Toolbars/PageControls","modified":"20230411141745561"},
 {"title":"$:/status/RequireReloadDueToPluginChange","text":"no"},
-{"created":"20230411143212064","title":"$:/StoryList","text":"","list":"SaveWiki [[Publishing your wiki to Github Page]] TableOfContent OnlineVersion","modified":"20230411143315515"},
+{"title":"$:/StoryList","text":"","list":"TableOfContent"},
 {"created":"20230411131539452","title":"$:/themes/tiddlywiki/vanilla/options/sidebarlayout","text":"fluid-fixed","modified":"20230411131539452"},
 {"created":"20230411142312780","text":"https://theophiledesmedt.github.io/LearningTiddlywiki","tags":"","title":"OnlineVersion","modified":"20230411142328277"},
 {"created":"20230411131735142","text":"","title":"Publishing your wiki to Github Page","modified":"20230411140106173"},
-{"created":"20230411142500830","text":"\u003C$button>\n\u003C$action-setfield $tiddler=\"$:/GitHub/Username\" text=\"TheophileDesmedt\"/>\n\u003C$action-sendmessage $message=\"tm-save-wiki\" $param={{$:/config/SaveWikiButton/Template}} />\n\u003C$action-setfield $tiddler=\"$:/GitHub/Username\" text=\"\"/>\n\nSave\n\n\u003C/$button>","tags":"","title":"SaveWiki","modified":"20230411143155506"},
+{"created":"20230411142500830","text":"\\define tv-config-toolbar-text() yes\n\\define save()\n\u003C$action-setfield $tiddler=\"$:/GitHub/Username\" text=\"TheophileDesmedt\"/>\n\u003C$action-sendmessage $message=\"tm-save-wiki\" $param={{$:/config/SaveWikiButton/Template}} />\n\u003C$action-setfield $tiddler=\"$:/GitHub/Username\" text=\"\"/>\n\\end \n \n* \u003C$button actions=\u003C\u003Csave>> class=\"tc-btn-invisible\"> {{$:/core/images/github}} save locally + to github\u003C/$button>\n* {{$:/core/ui/Buttons/save-wiki}}","tags":"$:/tags/SideBar","title":"Save","modified":"20230411144108311"},
 {"created":"20230411131610107","text":"* OnlineVersion\n* [[Publishing your wiki to Github Page]]","tags":"","title":"TableOfContent","modified":"20230411142409743"}
 ]</script><div id="storeArea" style="display:none;"></div>
 <!--~~ Raw markup for the bottom of the body section ~~-->
