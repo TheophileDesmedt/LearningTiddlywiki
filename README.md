@@ -1,5 +1,5 @@
 # LearningTiddlywiki
 
-An open source course to learn how to make the most of tiddlywiki.
+Get the most out of TiddlyWiki.
 
 https://theophiledesmedt.github.io/LearningTiddlywiki
